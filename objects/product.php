@@ -43,7 +43,7 @@ try{
         $stmt->bindParam(":category_id", $this->category_id);
         $stmt->bindParam(":created", $this->timestamp);
         
-        $stmt->execute();
+        
         if($stmt->execute()){
           return true;
             
