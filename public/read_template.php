@@ -46,12 +46,12 @@ if($total_rows>0){
                 echo "<td>";
   
                     // read product button
-                    echo "<a href='public/read_one.php?id={$id}' class='btn btn-primary left-margin'>
+                    echo "<a href='/webshop/public/read_one.php?id={$id}' class='btn btn-primary left-margin'>
                         <span class='glyphicon glyphicon-list'></span> Read
                     </a>";
   
                     // edit product button
-                    echo "<a href='public/update_product.php?id={$id}' class='btn btn-info left-margin'>
+                    echo "<a href='/webshop/public/update_product.php?id={$id}' class='btn btn-info left-margin'>
                         <span class='glyphicon glyphicon-edit'></span> Edit
                     </a>";
   
