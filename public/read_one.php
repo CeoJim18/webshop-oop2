@@ -35,22 +35,22 @@ echo "<div class='right-button-margin'>
 echo "<table class='table table-hover table-responsive table-bordered'>
   
     <tr>
-        <td>Name</td>
+        <td>Name:</td>
         <td>{$product->name}</td>
     </tr>
   
     <tr>
-        <td>Price</td>
+        <td>Price:</td>
         <td>$ {$product->price};</td>
     </tr>
   
     <tr>
-        <td>Description</td>
+        <td>Description:</td>
         <td>{$product->description}</td>
     </tr>
   
     <tr>
-        <td>Category</td>
+        <td>Category:</td>
         <td>";
             // display category name
             $category->id=$product->category_id;
@@ -59,7 +59,7 @@ echo "<table class='table table-hover table-responsive table-bordered'>
         echo "</td>
     </tr>";
     echo "<tr>";
-    echo "<td>Image</td>";
+    echo "<td>Image:</td>";
     echo "<td>";
         echo $product->image ? "<img src='../../uploads/{$product->image}' style='width:300px;' />" : "No image found.";
     echo "</td>";

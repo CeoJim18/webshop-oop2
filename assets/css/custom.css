@@ -1,3 +1,10 @@
+@font-face {
+  font-family: 'OpenSans-ExtraBold';
+  src: url('fonts/OpenSans/OpenSans-ExtraBold.ttf') format('truetype');
+
+}
+
+
 .left-margin {
   margin: 0 .5em 0 0;
 }
@@ -17,7 +24,51 @@
   text-align: center !important;
 }
 
-.header-title {
-  font-family: "sans-serif";
-  
+.extrabold-text {
+  font-family: 'Open Sans';
+  font-weight: 800;
+  font-style: normal;
+
+}
+
+.bold-text {
+  font-family: 'Open Sans';
+  font-weight: bold;
+  font-style: normal;
+}
+
+.semibold-text {
+  font-family: 'Open Sans';
+  font-weight: 600;
+  font-style: normal;
+}
+
+.light-text {
+  font-family: 'Open Sans';
+  font-weight: 300;
+  font-style: normal;
+  color: black;
+
+}
+
+.regular-text {
+  font-family: 'Open Sans';
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+.searchbar-placeholder {
+  font-family: 'Open Sans';
+  font-weight: 600;
+  font-style: normal;
+  font-size: 13px;
+}
+
+.createproduct-btn-text {
+  font-family: 'Open Sans';
+  font-weight: bold;
+  font-style: normal;
+  font-size: 20px;
 }

@@ -12,8 +12,17 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
    
     <!-- our custom CSS -->
-    <link rel="stylesheet" href="assets/css/custom.css" />
-   
+
+    <!----FONT-CONTROL PHP CODE -->
+    <?php 
+   if ($page_title=="Read Products"){
+   echo "<link rel='stylesheet' href='assets/css/custom.css' />";
+   echo "<link rel='stylesheet' href='assets/css/fonts.css'/>";
+   } else{
+ echo "<link rel='stylesheet' href='../assets/css/custom.css' />";
+   echo "<link rel='stylesheet' href='../assets/css/fonts.css'/>";
+   }
+   ?>
 </head>
 <body>
   
@@ -22,7 +31,8 @@
   
         <?php
         // show page title
+        $title_page= strval($page_title);
         echo "<div class='page-header'>
-                <h1 class='header-title'>{$page_title}</h1>
+                <h1 class='extrabold-text'>{$title_page}</h1>
             </div>";
         ?>

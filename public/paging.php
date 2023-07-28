@@ -3,7 +3,7 @@ echo "<ul class=\"pagination\">";
   
 // button for first page
 if($page>1){
-    echo "<li><a href='{$page_url}' title='Go to the first page.'>
+    echo "<li><a class='semibold-text' href='{$page_url}' title='Go to the first page.'>
         First Page
     </a></li>";
 }
@@ -25,19 +25,19 @@ for ($x=$initial_num; $x<$condition_limit_num; $x++) {
   
         // current page
         if ($x == $page) {
-            echo "<li class='active'><a href=\"#\">$x <span class=\"sr-only\">(current)</span></a></li>";
+            echo "<li class='active extrabold-text'><a href=\"#\">$x <span class=\"sr-only\">(current)</span></a></li>";
         }
   
         // not current page
         else {
-            echo "<li><a href='{$page_url}page=$x'>$x</a></li>";
+            echo "<li><a class='regular-text' href='{$page_url}page=$x'>$x</a></li>";
         }
     }
 }
   
 // button for last page
 if($page<$total_pages){
-    echo "<li><a href='" .$page_url . "page={$total_pages}' title='Last page is {$total_pages}.'>
+    echo "<li><a href='" .$page_url . "page={$total_pages}' title='Last page is {$total_pages}.' class='semibold-text'>
         Last Page
     </a></li>";
 }
