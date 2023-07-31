@@ -8,7 +8,11 @@ Er moest een try-catch block staan in die create() methode van products.php
 Errors bij uploading file functionality:
 
 Bij dat laatste stukje van de eerste link, moest ik zelf uitvinden dat ik de absolute path moet gebruiken van de folder waarin ik images wou uploaden
-Ook moest de web-server (in mijn geval Apache) permission krijgen alvorend het files van de temporary directory zou kunnen verplaatsen naar de local dir. PS: dit alles was niet vermeld in de tutorial, moest het zelf uitzoeken uren lang.
+Ook moest de web-server (in mijn geval Apache) permission krijgen alvorend het files van de temporary directory zou kunnen verplaatsen naar de local dir.
+Dit werd gedaan via de termina van ubuntu met de command: 'chown -R www-data:www-data /var/www/html/uploads/
+'
+
+ PS: dit alles was niet vermeld in de tutorial, moest het zelf uitzoeken uren lang.
 
 Added erbij:
 
