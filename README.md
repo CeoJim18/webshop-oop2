@@ -63,27 +63,29 @@ Here are things that should be done/taken into consideration before proceeding w
     </div>";``` in create_product.php file
 
 - Change the followibg from read_template.php:
-  1. `php echo "<form role='search' action='/{yourNewFolderName}/public/search.php'>`
-  2. ````php
+  1. ```php
+        echo "<form role='search' action='/{yourNewFolderName}/public/search.php'>
+     ```
+  2. ```php
              // create product button
              echo "<div class='right-button-margin'>
              <a href='/webshop/public/create_product.php' class='btn btn-primary pull-right createproduct-btn-text'>
              <span class='glyphicon glyphicon-plus'></span> Create Product
          </a>
-     </div>";```
-     ````
+     </div>";
+     ```
   3. ```php
        // read product button
        echo "<a href='/webshop/public/read_one.php?id={$id}' class='btn btn-primary left-margin bold-text '>
                        <span class='glyphicon glyphicon-list'></span> Read
                    </a>";
      ```
-  4. ````php
+  4. ```php
       // edit product button
        echo "<a href='/webshop/public/update_product.php?id={$id}' class='btn btn-info left-margin bold-text '>
                        <span class='glyphicon glyphicon-edit'></span> Edit
-                   </a>";```
-     ````
+                   </a>";
+     ```
 
 ## Screenshots
 
