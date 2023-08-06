@@ -54,7 +54,7 @@ Here are things that should be done/taken into consideration before proceeding w
 2. Access the website in your web browser at `http://localhost/your-repo`.
 
 ## When project name changes: <a id="project-namechange"></a> 
-### Replace {yourNewProjectName} in all of the scripts below with the name you gvae to your project. Skip this step if you used the same name this project originally has. 
+### Replace {yourNewProjectName} in all of the scripts below with the name you gave to your project. Skip this step if you used the same name this project originally has. 
 
 - Change the following in `create_product.php` file: `php 
          echo "<div class='right-button-margin'>
